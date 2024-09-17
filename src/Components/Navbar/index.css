@@ -1,0 +1,55 @@
+.logo{
+    font-size: medium;
+}
+
+.logoName{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding:8px;
+    color:antiquewhite;
+    cursor: pointer;
+    margin:0;
+
+}
+.Linkelements{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Navbar_Large{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navbar_small{
+    display:none;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width:576px){
+    .Navbar_small{
+        display:flex;
+    }
+    .Navbar_Large{
+        display: none;
+    }
+    .menulogo{
+        margin:8px;
+    }
+}
+.NavbarUnorderedlist{
+    padding:0;
+    display:flex;
+    justify-content:flex-end;
+    margin:0;
+}
+
+.NavItems{
+    list-style-type:none;
+    margin:15px;
+    font-size: 20px;
+    font-weight:600;
+    color:#ffffff;
+    font-family:"cursive";
+}
+
