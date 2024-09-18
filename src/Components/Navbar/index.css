@@ -4,7 +4,7 @@
 
 .logoName{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding:8px;
+    padding:20px;
     color:antiquewhite;
     cursor: pointer;
     margin:0;
@@ -41,6 +41,37 @@
     .menuButton{
         border:0 none;
         background-color: transparent;
+    }
+    .menuContainer{
+        padding:0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color:#ffffff;
+        width: 150px;
+        border:1px solid #ffffff;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    .MContainer{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .menuListItem{
+        font-family: "fantasy";
+        font-size: larger;
+        margin:8px;
+        color:#000000;
+    }
+    .smallIcons{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .iconsInSmall{
+        font-size: 25px;
     }
     
 }

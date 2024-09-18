@@ -2,21 +2,48 @@ import React from 'react'
 import { useState } from 'react';
 import {Link} from 'react-router-dom';
 import { IoMenu } from "react-icons/io5";
+import { IoMdHome } from "react-icons/io";
+import { TbCertificate } from "react-icons/tb";
+import { GoProject } from "react-icons/go";
+import { BiSolidUserDetail } from "react-icons/bi";
 import './index.css'
 
 
 
 const Nav=()=>{
-    const [clicked,setClicked]=useState("False")
+    const [clicked,setClicked]=useState(false)
     const menuButton=()=>{
-        if (clicked==='True'){
-            setClicked('False')
+        if (clicked===true){
+            setClicked(false)
         }
         else{
-            setClicked('True')
+            setClicked(true)
         }
-        console.log(clicked)
     }
+    const menuItems=(
+        <div className='MContainer'>
+            <ul className='menuContainer'>
+                <Link to='/' className='Linkelements smallIcons'>
+                <IoMdHome className='iconsInSmall'/>
+                <li className='menuListItem'>Home 
+                </li>
+                </Link>
+                <Link to='/certificates' className='Linkelements smallIcons'>
+                <TbCertificate className='iconsInSmall'/>
+                <li className='menuListItem'>Certificates</li>
+                </Link>
+                <Link to='/projects' className='Linkelements smallIcons'>
+                <GoProject className='iconsInSmall'/>
+                <li className='menuListItem'>Projects</li>
+                </Link>
+                <Link to='/About' className='Linkelements smallIcons'>
+                <BiSolidUserDetail className='iconsInSmall'/>
+                <li className='menuListItem'>About</li>
+                </Link>
+            </ul>
+        </div>
+    )
+    const showMenu= clicked? menuItems:''
     return (
         <>
         <nav className='Navbar_Large'>
@@ -43,9 +70,10 @@ const Nav=()=>{
             <h1 className='logoName'>Portfolio</h1>
             </Link>
             <button className='menuButton' onClick={menuButton}>
-            <IoMenu class='menulogo'/>
-            </button>
+            <IoMenu className='menulogo'/>
+            </button>   
         </nav>
+        {showMenu}
         </>
     )
 }

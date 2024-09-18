@@ -19,16 +19,16 @@ const HomePage=()=>(
                     I'm a Passionate Candidate looking for a right opportunity to launch my career. I'm eager to continously learn, adapt, and grow in a dynamic industry, striving to make a meaningful imapact through creativity and consistency.
                 </p>
                 <div className='buttonContainer'>
-                    <a href='https://drive.google.com/file/d/1y1uKxZ3Ym21-_MX9eVI8BT8R5RvXEUat/view?usp=drivesdk' target="_blank" className='resumelink'><div className='ButtonItems'>Resume 
+                    <a href='https://drive.google.com/file/d/1y1uKxZ3Ym21-_MX9eVI8BT8R5RvXEUat/view?usp=drivesdk' rel="noopener noreferrer" target="_blank" className='resumelink'><div className='ButtonItems'>Resume 
                         <FaExternalLinkAlt className='externalLink' />
                     </div></a>
-                    <a href='https://github.com/rajkumaraina' target='_blank' className='resumelink'>
+                    <a href='https://github.com/rajkumaraina' target='_blank' rel="noopener noreferrer" className='resumelink'>
                     <FaGithub className='Icons'/>
                     </a>
-                    <a href='https://www.linkedin.com/in/rajkumaraina/' target='_blank' className='resumelink'>
+                    <a href='https://www.linkedin.com/in/rajkumaraina/' rel="noopener noreferrer" target='_blank' className='resumelink'>
                     <FaLinkedin className='Icons'/>
                     </a>
-                    <a href='https://www.instagram.com/rajkumaraina3/?hl=en' target='_blanck' className='resumelink'>
+                    <a href='https://www.instagram.com/rajkumaraina3/?hl=en' rel="noopener noreferrer" target='_blanck' className='resumelink'>
                     <FaInstagram className='Icons'/>
                     </a>
                 </div>
